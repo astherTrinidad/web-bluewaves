@@ -1,0 +1,155 @@
+
+@media (max-width: 1260px){
+	.main_section h1, h3{
+	    text-align: center;
+	   	margin-left: 25px;
+
+	}
+
+	.subtitulo{
+		font-size: 15pt;
+	    font-family: 'Avenir Next LT Pro';
+	    margin-top: 545px;
+	    text-align: center;
+	    margin-left: 0px;
+	    margin-right: 0px;
+	}
+
+}
+
+@media (max-width: 750px){
+
+/* Sección inicio contacto */
+	.cajaIzq{
+		width: auto;
+		text-align: center;
+		display:block;
+		margin-top: 50px;
+	}
+
+
+
+/* Sección novedades */
+	.novedadesCol4centro {
+	    padding: 10px;
+	}
+
+	.novedadesProdTitulo{
+		font-size: 25px;
+	}
+
+	.novedadesProdTexto{
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.novedadesSeccionSubtitulo{
+		font-size: 22px;
+		margin-top: 10px;
+	}
+
+	.novedadesSeccionTitulo{
+		font-size: 175px;
+		margin-top: 95px;
+	}
+
+	.novedadesSeccionFecha{
+		padding-top: 300px;
+	}
+
+
+
+/* Sección productos */
+	.navFondoSeccionesSurf, .navFondoSeccionesSup, .navFondoSeccionesWindsurf, .navFondoVenta{
+		height: 75px;
+	}
+
+	.novedades1Header{
+		display: block;
+		height: 25px;
+	}
+
+	.productoSeccionTituloIzq, .productoSeccionTituloDcha{
+		text-align: center;
+		line-height: 0.8;
+	}
+
+	.productoSeccionSubtituloIzq, .productoSeccionSubtituloDcha{
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.invertirOrdenElementos{
+		flex-flow: column-reverse;
+	}
+
+	.col-offset-5{
+		margin-left: 0%;
+	}
+
+	.productoSeccionBannerSurf, .productoSeccionBannerSup, .productoSeccionBannerWind{
+		height: 240px;
+	}
+
+	.productoSeccionBannerTitulo{
+		font-size: 45px;
+		margin-top: 70px;
+	}
+
+	.productoSeccionBannerSubtitulo{
+		font-size: 35px;
+		margin-top: -40px;
+		margin-left: 15px;
+	}
+
+	.productoSeccionBannerSubtituloSep{
+		letter-spacing: 15px;
+	}
+
+	.col-5, .col-7{
+		padding: 0px;
+	}
+
+
+
+/* seccion gracias*/
+	.graciasFondoBlancoLogo{
+		height: 300px;
+		margin-bottom: 250px;
+	}
+
+
+
+/* seccion venta */
+	.carritoSeccion{
+		text-align: center;
+	}
+	.carritoTextoTotal, .carritoPrecio, .carritoTextoGastosEnvio{
+		text-align: center;
+	}
+
+}
+
+/* salto del nav */
+@media (max-width: 1020px){
+
+	.navEscritorio{
+		visibility: hidden;
+		display: none;
+	}
+
+	.navResponsive{
+	visibility: visible;
+	display: flex;
+    }
+
+	.footerEscritorio{
+		visibility: hidden;
+		display: none;
+	}
+
+	.footerResponsive{
+	visibility: visible;
+	display: flex;
+	}
+}

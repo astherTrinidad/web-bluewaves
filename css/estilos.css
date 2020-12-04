@@ -1,0 +1,1085 @@
+/* -----------  Variables ----------- */
+:root{
+	/* Colores */
+	--greenBLue-color: darkslategray;
+	--azulTurquesa-color: #54bfbf;
+	--white-color: #ffffff;
+	--gris-color: #676766;
+	--verde-color:#2B8781;
+	--negro-color:#000000;
+	/* Espaciado */
+	--space: 10px;
+	/* Tipografía */
+	--normal: 15px;
+	/*Sombreado*/
+	--box-shadow: 0px 6px 6px #00000029;
+
+	}
+/* centrado */
+.centrado{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* -----------  Nav ----------- */
+html, body{
+	margin: 0px;
+	padding:0px;
+	font-size: var(--normal);
+    font-family: 'Avenir Next LT Pro';
+}
+
+img{
+	width: 100%;
+}
+
+.navResponsive{
+	visibility: hidden;
+	display: none;
+	height: 50px;
+}
+
+nav {
+	display: flex; /*Ayuda a pasar los elementos de vertical a horizontal*/
+	background-color:rgba(0,0,0,0.2);
+	padding: var(--space);
+	color: var(--white-color);
+	align-items: center;
+	min-height: 30px;
+}
+
+nav .menu{
+	margin-left: auto;
+}
+
+nav .menu .lista-menu{
+	position: absolute;
+	padding-left: 0px;
+	width: 550px;
+	top: 28px;
+	left:0;
+	right:0;
+	margin: auto;
+}
+
+nav a{
+	color: var(--gris-color);
+	text-decoration: none;
+	font-size: 15px;
+  	color: var(--white-color);
+  	text-align: center;
+}
+
+nav li a:hover{
+	color: var(--azulTurquesa-color);
+}
+
+nav ul{
+	display: flex;
+
+}
+
+nav ul li{
+	list-style: none;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.menuResponsive{
+	margin-left: auto;
+}
+
+.menuResponsive .lista-menu{
+	position: absolute;
+	padding-left: 0px;
+	width: 550px;
+	top: 28px;
+	left:0;
+	right:0;
+	margin: auto;
+}
+
+.navFondoVenta{
+	background-image: url('../images/fondoInicio.jpg');
+	position: absolute;
+	background-repeat: repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 460px;
+	z-index:-1;
+	margin-top: -75px;
+}
+
+.navFondoSeccionesSurf{
+	background-image: url('../images/productosHeaderSurf.jpg');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 280px;
+	z-index:-1;
+	margin-top: -75px;
+}
+
+.navFondoSeccionesSup{
+	background-image: url('../images/productosHeaderSup.jpg');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 280px;
+	z-index:-1;
+	margin-top: -75px;
+}
+
+.navFondoSeccionesWindsurf{
+	background-image: url('../images/productosHeaderWindsurf.jpg');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 280px;
+	z-index:-1;
+	margin-top: -75px;
+}
+
+
+/* -----------  Links (efectos) ----------- */
+
+a:link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--white-color);
+}
+
+a:hover {
+  color: var(--azulTurquesa-color);
+}
+
+a:active {
+  color: #449ca6;
+} 
+
+:focus{
+	outline:0;
+}
+
+/* -----------  Nav Escritorio (menú desplegable) ----------- */
+
+.menuDesplegable {
+	position: relative;
+	display: inline-block;
+	height: 50px;
+}
+
+.menuDesplegable-contenido {
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  height: auto;
+  text-align: left;
+  margin-left: -625px;
+  padding-right: 0px;
+}
+
+
+.menuDesplegable-contenido a {
+  float: none;
+  color: var(--gris-color);
+  text-decoration: none;
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 15px;
+  font-size: 15px;
+  padding-right: 0px;
+  width: max-content;
+}
+
+.menuDesplegable:hover .menuDesplegable-contenido {
+  display: inline-flex;
+  margin-top: 47px;
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+}
+
+.menuDesplegable-contenido:hover {
+  display: block;
+}
+
+
+.subMenuLista {
+	font-weight: bold;
+	font-size: 20px;	
+	display: inline-block;
+	margin-top: -20px
+}
+
+.subMenuLista a h4 {
+	font-weight: bold;
+	font-size: 20px;	
+	display: inline-block;
+	color: var(--white-color);
+	margin-bottom: 10px;
+}
+
+.subMenuLista h4 {
+	padding-left: 30px;
+
+}
+
+.subMenuLista ul{
+	display: block;
+		padding-left: 0px;
+
+}
+
+.subMenuLista li a {
+	font-weight: normal;
+	color: var(--white-color);
+	padding-left: 0px;
+
+}
+
+.lineaVertical{
+	border-right: 2px solid var(--white-color);
+	height: 145px;
+}
+
+/* -----------  Nav Responsive (menú desplegable) ----------- */
+.menuDesplegableResponsive{
+  position: relative;
+  display: inline-block;
+}
+
+.menuDesplegable-contenidoResponsive {
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+}
+
+.menuDesplegable-contenidoResponsive a {
+  color: var(--white-color);
+  text-decoration: none;
+  display: block;
+  width: max-content;
+  padding-bottom: 15px;
+}
+
+.menuDesplegable-contenidoResponsive ul {
+  display: inline-block;
+  padding-left: 0px;
+}
+
+.menuDesplegableResponsive:hover .menuDesplegable-contenidoResponsive {
+  display: block;
+  margin-top: 47px;
+}
+
+
+.lineaMenuResponsive{
+	border: 1px solid var(--white-color);
+  width:80%;
+  margin-top: -15px;
+  margin-bottom: 45px;
+  margin-left: 30px;
+}
+
+.subMenuListaResponsive a {
+	font-weight: bold;
+	font-size: 20px;	
+	display: block;
+	margin-top: -20px
+	color: var(--white-color);
+}
+
+
+/* -----------  Nav (iconos) ----------- */
+
+nav .icon{
+	font-size: 25px;
+	float: right;
+	display: inline-block;
+	padding-right: 20px;
+}
+
+nav .logoNav{
+	width: auto;
+	height: 50px;
+	padding-left: 20px;
+}
+/* -----------  Nav Responsive (iconos) ----------- */
+
+
+nav .iconMenuResponsive{
+	font-size: 25px;
+	float: right;
+	display: inline-block;
+	padding-right: 20px;
+	padding-left: 20px;
+	height: 50px;
+	margin-bottom: -26px;
+}
+
+nav .logoNavResponsive{
+	display: block;
+	width: auto;
+	height: 65px;
+}
+
+
+nav .divLogoNavResponsive{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+nav .iconResponsive{
+	font-size: 25px;
+	float: right;
+	display: inline-block;
+	padding-right: 20px;
+	position: relative;
+	display: block;
+	}
+
+/* -----------  Main section ----------- */
+
+.main_section{
+	text-align: left;
+	width:100%;
+	display: inline-block;
+}
+
+.main_section h1{
+    font-family: 'Sensations and Qualities';
+    font-size: 196pt;
+    position: absolute;
+    margin-top: 225px;
+    padding: var(--space);
+    color: var(--white-color);
+    margin-left: 85px;
+    font-weight: normal;
+}
+
+.main_section h3{
+	font-family: 'Sensations and Qualities';
+    font-size: 80pt;
+	position: absolute;
+    margin-top: 200px;
+    color: var(--white-color);
+    font-weight: normal;
+    margin-left: 95px;
+}
+
+.subtitulo{
+	font-size: 15pt;
+    font-family: 'Avenir Next LT Pro';
+    font-style: normal;
+    margin-top: 545px;
+    color: var(--white-color);
+    text-align: left;
+    margin-left: 790px;
+}
+
+.inicio{ 
+	background-image: url('../images/fondoInicio.jpg');
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover; /*ocupe el tamaño del div que tiene*/
+	height: 685px;
+	margin-top: -95px;
+	z-index: -2;
+}
+
+.inicioSubFondo{
+	background-image: url('../images/textura.jpg');
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: top;
+	height: 80px;
+	z-index: -4;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.tituloSecciones{
+	font-size: 60px;
+    font-family: 'Avenir Next LT Pro';
+    font-style: normal;
+    text-align: center;
+    margin-top:70px;
+    color: var(--gris-color);
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.subtituloSecciones{
+	font-size: 40px;
+    font-family: 'Avenir Next LT Pro';
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #00A4B3;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+/* -----------  Novedades / Inicio ----------- */
+.linkNovedadesInicio{
+	height: 3px;
+}
+
+.productos{
+	padding: 50px 0 50px 0; /*cajas centradas dentro de su contenedor*/
+	display: flex; /* Uno al lado del otro*/
+	justify-content: center;
+	flex-wrap: wrap; /*hijos flexibles*/
+	margin-top: -60px;
+}
+
+.producto{
+	padding: 10px;
+	margin: 15px;
+}
+
+.producto .contenido{
+	padding: var(--space);
+	width: 300px;
+
+}
+
+.producto .contenido .img_contenido{
+	text-align: center;
+	position: relative;
+	overflow: hidden; /*imagen dentro del marco*/
+	height: 290px;
+}
+
+.producto .contenido .img_contenido img{
+	width: 100%;
+}
+
+
+.main_button{
+	background-color: var(--azulTurquesa-color);
+	border-radius: 20px;
+	width: 100%;
+	padding: 5px 60px 5px 60px;
+	font-size: var(--normal);
+	text-decoration: none;
+	color: var(--white-color);
+	text-align: center;
+	cursor: pointer;
+}
+
+.main_button:hover{
+	background-color: orange;
+	color: var(--white-color);
+}
+
+
+/* -----------  Novedades (sección) ----------- */
+
+/* -----------  Novedades (header) ----------- */
+
+.novedades1Header{
+	display: block;
+	height: 250px;
+}
+
+.novedades1img{
+	background-image: url('../images/cabeceraNov1.png');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	width: 100%;
+	height: 390px;
+	z-index:-1;
+	margin-top: -75px;
+}
+
+.novedades2img{
+	background-image: url('../images/cabeceraNov2.png');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	width: 100%;
+	height: 390px;
+	z-index:-1;
+	margin-top: -75px;
+}
+
+.novedades3img{
+	background-image: url('../images/cabeceraNov3.png');
+	position: absolute;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	width: 100%;
+	height: 390px;
+	z-index:-1;
+	margin-top: -75px;
+}
+
+.novedadesSeccionTitulo{
+    font-family: 'Sensations and Qualities';
+	font-size: 205px;
+	font-weight: normal;
+	text-align: center;
+	height: 200px;
+	color: var(--white-color);
+	margin-top: 95px;
+	margin-bottom: 5px;
+}
+
+.novedadesSeccionSubtitulo{
+	text-align: center;
+	margin-top: 40px;
+	font-size: 30px;
+	color: var(--white-color);
+	width: 100%;
+}
+
+
+/* -----------  Novedades (artículo) ----------- */
+.novedadesSeccionFecha{
+	color: #808080;
+	font-family: 'Avenir Next LT Pro';
+	padding-top: 100px;
+	font-size: 20px;
+	font-style: normal;
+}
+
+.novedades1texto{
+
+	text-align: justify;
+	line-height: 1.8;
+	font-family: 'Avenir Next LT Pro';
+	font-size: 20px;
+}
+
+.novedades1textoResponsive{
+
+	text-align: justify;
+	line-height: 1.8;
+	font-family: 'Avenir Next LT Pro';
+	font-size: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.novedades1textoCL{ /*Capital Letter*/
+	display:block;
+    float:left;
+	font-family: 'Avenir Next LT Pro';
+    font-size: 350%;
+    font-weight: bold;
+    line-height: 100%;
+    margin-right: 5px;
+    margin-bottom:-5px;
+    margin-top: 7px;
+}
+
+.novedades1Cita{
+    font-family: 'Sensations and Qualities';
+	font-size: 50px;
+	text-align: center;
+	margin: 0px;
+	line-height: normal;
+}
+
+/* -----------  Novedades (video) ----------- */
+
+.videoNovedades{
+	width: 100%;
+}
+
+/* -----------  Novedades (enlace a productos) ----------- */
+
+.novedadesSeccionFinal{ /*Titulo de la sección*/
+	color: #808080;
+	font-family: 'Avenir Next LT Pro';
+	font-size: 20px;
+	padding: 30px 15px 5px 15px;
+}
+
+.novedadesSeccionFinalLinea{ /*línea horizontal*/
+	border: 1px solid #2B8781;
+	margin-top: -10px;
+	margin-bottom: 20px;
+	width: 97%;
+}
+
+.novedadesProdTitulo{
+	font-family: 'Avenir Next LT Pro';
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
+.novedadesProdTexto{
+	font-family: 'Avenir Next LT Pro';
+	font-size: 15px;
+	line-height: 1.5;
+	text-align: justify;
+	margin-top: 5px;
+}
+
+.novedadesRowCol4{
+	padding: 15px;
+	background-color: var(--white-color);
+}
+
+.novedadesCol4centro{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.InicioNovedadesCol4centro{
+	padding-left: 90px;
+	padding-right: 90px;
+}
+
+.novedadesContenedorImg{
+	overflow: hidden;
+	max-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* -----------  Producto ----------- */
+
+.productoSeccion{
+	color: var(--azulTurquesa-color);
+}
+
+.productoSeccionTituloIzq{
+	font-family: 'Sensations and Qualities';
+	font-size: 150px;
+	font-weight: normal;
+	text-align: left;
+	color: var(--negro-color);
+	margin: 0;
+	padding-left: 10px;
+}
+
+.productoSeccionSubtituloIzq{
+	text-align: left;
+	padding-left: 10px;
+	color: var(--negro-color);
+	margin: 0;
+}
+
+
+.productoSeccionTituloDcha{
+	font-family: 'Sensations and Qualities';
+	font-size: 150px;
+	font-weight: normal;
+	text-align: left;
+	color: var(--negro-color);
+	margin: 0;
+}
+
+.productoSeccionSubtituloDcha{
+	text-align: left;
+	color: var(--negro-color);
+	margin: 0;
+}
+
+.productoSeccionTexto{
+	text-align: justify;
+	line-height: 1.8;
+	padding-bottom: 100px;
+	z-index: 2;
+}
+
+
+/* -----------  Banner ----------- */
+
+.productoSeccionBannerSurf{
+	background-image: url('../images/bannerSurf.jpg');
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	width: 100%;
+	height: 350px;
+	display: table;
+	margin-bottom: 50px;
+}
+
+.productoSeccionBannerSup{
+	background-image: url('../images/bannerSup.png');
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	width: 100%;
+	height: 350px;
+	display: table;
+	margin-bottom: 50px;
+}
+
+.productoSeccionBannerWind{
+	background-image: url('../images/bannerWind.png');
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	width: 100%;
+	height: 350px;
+	display: table;
+	margin-bottom: 50px;
+}
+
+.productoSeccionBannerTitulo{
+	text-align: center;
+	color: var(--white-color);
+	font-size: 70px;
+	font-family: 'Avenir Next LT Pro';
+	margin-top: 120px;
+	display: block;
+}
+
+.productoSeccionBannerSubtitulo{
+	text-align: center;
+	color: #3d9dd9;
+	font-size: 50px;
+	font-family: 'Avenir Next LT Pro';
+	letter-spacing: 15px;
+	display: block;
+	margin-top: -70px;
+}
+
+.productoSeccionBannerSubtituloSep{
+	letter-spacing: 50px;
+}
+
+.productosPrecio{
+	color: var(--azulTurquesa-color);
+	font-size: 50px;
+	font-family: 'Avenir Next LT Pro';
+	font-weight: bold;
+	float: left;
+	margin-top: -25px;
+	padding-left: 25px;
+}
+
+/* -----------  Producto (enlace al carrito) ----------- */
+
+.botonAnadirCarrito{
+	width: 5em;
+	height: 5rem;
+	border-radius: 50%;
+	background: var(--azulTurquesa-color);
+	display: flex;
+	float: right;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  	margin:0px auto;
+  	padding:3%;
+}
+
+.botonAnadirCarrito h2 {
+	font-family: 'Avenir Next LT Pro';
+	color: var(--white-color);
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.botonAnadirCarrito a:hover {
+  color: #122926;
+}
+
+/* -----------  Quiénes Somos ----------- */
+
+.novedadesQuienesSomosFondo{
+	background-image: url('../images/novedadesQuienesSomosFondo_ok.png');
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	height: 740px;
+	margin-top: -220px;
+	z-index: -40;
+}
+
+.tituloSeccionesTextoBlanco{
+	font-size: 60px;
+    font-family: 'Avenir Next LT Pro';
+    font-style: normal;
+    text-align: center;
+    margin-top:-425px;
+    color: var(--white-color);
+    font-weight: normal;
+    margin-bottom: 15px;
+} 
+
+.subtituloSeccionesQuienesSomos{
+	font-size: 40px;
+    font-family: 'Avenir Next LT Pro';
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    color: #00A4B3;
+    margin-top: -5px;
+    margin-bottom: 40px;
+}
+
+.quienesSomosVideo{
+	width: 100%
+}
+
+/* -----------  Contacto ----------- */
+
+.cajaIzq{
+	display: inline-block;
+	vertical-align: top;
+	width: 35%;
+	color: var(--gris-color);
+	text-align: right;
+	padding: 5px;
+	padding-bottom: 25px;
+	font-size: 15px;
+}
+
+.camposFormulario{
+	display: inline-block;
+	width: 450px;
+	border-bottom: 1px solid #00A4B3;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	margin-left: 20px;
+}
+
+.button {
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 100px;
+}
+
+.campoFormularioMensaje{
+	border: 1px solid #00A4B3;
+	margin-left: 20px;
+	width: 450px;
+	margin-bottom: 25px;
+}
+
+/* -----------  Carrito ----------- */
+.carrito{
+	background-color: var(--white-color);
+	box-shadow: var(--box-shadow);
+	padding: var(--space);
+}
+
+.carritoImg{
+	max-width: 300px;
+	text-align: center;
+	width: 60%;
+	margin: auto;
+}
+
+.carrito img{
+	width: 100%;
+}
+
+.carritoPrecio{
+	text-align: right;
+	color: var(--azulTurquesa-color);
+	font-family: 'Avenir Next LT Pro';
+	font-weight: bold;
+	font-size: 50px;
+	margin: 0px;
+}
+
+.carritoTextoTotal{
+	text-align: right;
+	color: var(--gris-color);
+	font-family: 'Avenir Next LT Pro';
+	font-weight: bold;
+	font-size: 35px;
+	margin: 0px;
+	margin-top: 75px;
+}
+
+.carritoTextoGastosEnvio{
+	text-align: right;
+	color: var(--gris-color);
+	font-style: italic;
+	font-size: 15px;
+	margin: 0px;
+	margin-bottom: 75px;
+}
+
+.separacionPalabras{
+	word-spacing: 1;
+}
+
+label{
+	font-size: var(--normal);
+}
+
+.carrito .formulario {
+	margin-bottom: 5px;
+	width: 100%;
+	height: 35px;
+	border-bottom: 1px solid #00A4B3;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	box-sizing: border-box;
+}
+.carrito .formularioDireccion {
+	margin-bottom: 5px;
+	width: 34%;
+	height: 35px;
+	border-bottom: 1px solid #00A4B3;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	box-sizing: border-box;
+}
+
+.carrito .formularioNum{
+	margin-top: 15px;
+	margin-bottom: 5px;
+	width: 15%;
+	height: 35px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #00A4B3;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+.carritoSeccion{
+	color: var(--azulTurquesa-color);
+	text-align: left;
+}
+
+.fondoCarrito{
+	background-color: var(--white-color);
+	height:140px;
+}
+
+.fondoCarritoDetalles{
+	background-color: var(--white-color);
+	height:100px;
+	margin-top: 75px;
+}
+
+.carritoSeccionFinalLinea{
+	border: 1px solid #2B8781;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.botonAnadirCarritoVenta{
+	width: 3em;
+	height: 3rem;
+	border-radius: 50%;
+	background: var(--azulTurquesa-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+  	margin:0px auto;
+  	padding:3%;
+  	margin-bottom: 75px;
+  	margin-top: 35px;
+}
+
+.botonAnadirCarritoVenta a:hover{
+	color: #122926;
+}
+.checkbox{
+	margin-top: 25px;
+	text-align: center;
+	line-height: 2;
+}
+
+/* -----------  Gracias----------- */
+
+.graciasTexto1{
+	text-align: center;
+	font-family: 'Sensations and Qualities';
+	font-size: 60px;
+	color:  #333333;
+	padding-bottom: 0px;
+	margin: 0;
+}
+
+.graciasTexto2{
+	text-align: center;
+	font-family: 'Avenir Next LT Pro';
+	padding-top: 15px; 
+	padding-bottom: 10px; 
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 20px;
+	margin: 0px;
+}
+
+.graciasImg{
+	width: 80%;
+	padding-top: 20px;
+}
+
+.graciasFondoBlancoLogo{
+	background-color: var(--white-color);
+	height: 365px;
+	margin-top: 225px;
+	margin-bottom: 160px;
+  	box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.2);
+  	z-index: -1;
+}
+
+.fondoGracias{
+	background-image: url('../images/fondoInicio.jpg');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	width: 100%;
+	height: 225px;
+	display: table;
+	margin-top: -75px;
+	z-index: -2;
+}
+
+
+/* -----------  Footer ----------- */
+
+footer {
+	background-color: #122926;
+	font-size: 12px;
+	color: var(--white-color);
+	padding: 10px;
+}
+
+footer .redesSociales{
+	float: right;
+	display: flex;
+}
+
+footer .redesSocialesIconos{
+	width: 12px;
+	height: auto;
+	padding-right: 5px;
+	padding-left: 15px;
+}
+

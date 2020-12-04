@@ -1,0 +1,44 @@
+/* -----------  Texto general ----------- */
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTPro-Regular.eot');
+    src: url('../fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextLTPro-Regular.woff2') format('woff2'),
+         url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+         url('../fonts/AvenirNextLTPro-Regular.ttf')  format('truetype'),
+         url('../fonts/AvenirNextLTPro-Regular.svg#Avenir Next LT Pro') format('svg');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTPro-Bold.eot');
+    src: url('../fonts/AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextLTPro-Bold.woff2') format('woff2'),
+         url('../fonts/AvenirNextLTPro-Bold.woff') format('woff'),
+         url('../fonts/AvenirNextLTPro-Bold.ttf')  format('truetype'),
+         url('../fonts/AvenirNextLTPro-Bold.svg#Avenir Next LT Pro') format('svg');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Avenir Next LT Pro';
+    src: url('../fonts/AvenirNextLTPro-It.eot');
+    src: url('../fonts/AvenirNextLTPro-It.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirNextLTPro-It.woff2') format('woff2'),
+         url('../fonts/AvenirNextLTPro-It.woff') format('woff'),
+         url('../fonts/AvenirNextLTPro-It.ttf')  format('truetype'),
+         url('../fonts/AvenirNextLTPro-It.svg#Avenir Next LT Pro') format('svg');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sensations and Qualities';
+    src: url('../fonts/SensationsandQualities.eot');
+    src: url('../fonts/SensationsandQualities.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/SensationsandQualities.woff2') format('woff2'),
+         url('../fonts/SensationsandQualities.woff') format('woff'),
+         url('../fonts/SensationsandQualities.ttf')  format('truetype'),
+         url('../fonts/SensationsandQualities.svg#Sensations and Qualities') format('svg');
+    font-style: normal;
+}
